@@ -37,20 +37,132 @@ t
 ​
  +b)
 
-where:
+Where:
 
-- \( x_t \) is the input at time step \( t \),
-- \( h_t \) is the hidden state at time step \( t \),
-- \( W_hh \) and \( W_xh \) are weight matrices,
-- \( b_h \) is the bias,
-- \( f \) is an activation function (typically \( tanh \) or \( ReLU \)).
+ℎ
+𝑡
+h 
+t
+​
+ : Hidden state at time step 
+𝑡
+t
+ℎ
+𝑡
+−
+1
+h 
+t−1
+​
+ : Hidden state at the previous time step 
+𝑡
+−
+1
+t−1
+𝑥
+𝑡
+x 
+t
+​
+ : Input at time step 
+𝑡
+t
+𝑊
+ℎ
+W 
+h
+​
+ : Weight matrix for the hidden state
+𝑊
+𝑥
+W 
+x
+​
+ : Weight matrix for the input
+𝑏
+b: Bias term
+𝜎
+σ: Activation function (commonly 
+tanh
+⁡
+tanh or 
+ReLU
+ReLU)
 
-The output at each time step is computed as:
+Output Calculation:
+The output 
+𝑦
+𝑡
+y 
+t
+​
+  is computed from the hidden state 
+ℎ
+𝑡
+h 
+t
+​
+  using a weight matrix 
+𝑊
+𝑦
+W 
+y
+​
+  and bias 
+𝑏
+𝑦
+b 
+y
+​
+ :
 
-\[ y_t = f(W_hy h_t) \]
+𝑦
+𝑡
+=
+𝑊
+𝑦
+⋅
+ℎ
+𝑡
++
+𝑏
+𝑦
+y 
+t
+​
+ =W 
+y
+​
+ ⋅h 
+t
+​
+ +b 
+y
+​
+ 
+Where:
 
-where \( W_hy \) is the output weight matrix and \( f \) is an activation function such as softmax (for classification tasks).
-
+𝑦
+𝑡
+y 
+t
+​
+ : Output at time step 
+𝑡
+t
+𝑊
+𝑦
+W 
+y
+​
+ : Weight matrix for the output layer
+𝑏
+𝑦
+b 
+y
+​
+ : Bias term for the output
+ 
 ### Backpropagation Through Time (BPTT)
 
 Training RNNs involves a specialized version of backpropagation called Backpropagation Through Time (BPTT). This process unfolds the RNN over multiple time steps and computes gradients to update weights. However, BPTT suffers from vanishing and exploding gradients, making it difficult to learn long-term dependencies.
