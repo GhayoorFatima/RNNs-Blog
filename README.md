@@ -41,32 +41,26 @@ Where:
 
 ℎ
 𝑡
-h 
-t
 ​
  : Hidden state at time step 
 𝑡
-t
+
 ℎ
 𝑡
 −
 1
-h 
-t−1
 ​
  : Hidden state at the previous time step 
 𝑡
 −
 1
-t−1
+
 𝑥
 𝑡
-x 
-t
 ​
  : Input at time step 
 𝑡
-t
+
 𝑊
 ℎ
 W 
@@ -75,13 +69,13 @@ h
  : Weight matrix for the hidden state
 𝑊
 𝑥
-W 
-x
 ​
  : Weight matrix for the input
-𝑏
+
+
 b: Bias term
-𝜎
+
+
 σ: Activation function (commonly 
 tanh
 ⁡
