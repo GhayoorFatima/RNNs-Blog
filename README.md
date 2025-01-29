@@ -25,18 +25,17 @@ t
 ​
  =σ(W 
 h
-​
- ⋅h 
+​*
+ h 
 t−1
 ​
  +W 
 x
-​
- ⋅x 
+​*
+ x 
 t
 ​
  +b)
-\[ h_t = f(W_hh h_{t-1} + W_xh x_t + b_h) \]
 
 where:
 
