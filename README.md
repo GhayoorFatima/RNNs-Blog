@@ -39,13 +39,13 @@ t
 
 Where:
 
-ℎ
+-**ℎ
 𝑡
 ​
  : Hidden state at time step 
-𝑡
+𝑡**
 
-ℎ
+-**ℎ
 𝑡
 −
 1
@@ -53,62 +53,53 @@ Where:
  : Hidden state at the previous time step 
 𝑡
 −
-1
+1**
 
-𝑥
+-**𝑥
 𝑡
 ​
  : Input at time step 
-𝑡
+𝑡**
 
-𝑊
+-**𝑊
 ℎ
-W 
-h
 ​
- : Weight matrix for the hidden state
-𝑊
+ : Weight matrix for the hidden state**
+ 
+-**𝑊
 𝑥
 ​
- : Weight matrix for the input
+ : Weight matrix for the input**
 
 
-b: Bias term
+-**b: Bias term**
 
 
-σ: Activation function (commonly 
+-**σ: Activation function (commonly 
 tanh
-⁡
-tanh or 
+⁡ or 
 ReLU
-ReLU)
+)**
 
 Output Calculation:
 The output 
 𝑦
 𝑡
-y 
-t
 ​
   is computed from the hidden state 
 ℎ
 𝑡
-h 
-t
 ​
   using a weight matrix 
 𝑊
 𝑦
-W 
-y
 ​
   and bias 
 𝑏
 𝑦
-b 
-y
 ​
  :
+ 
 
 𝑦
 𝑡
@@ -121,41 +112,25 @@ y
 +
 𝑏
 𝑦
-y 
-t
-​
- =W 
-y
-​
- ⋅h 
-t
-​
- +b 
-y
-​
- 
+
+​ 
 Where:
 
-𝑦
+
+-**𝑦
 𝑡
-y 
-t
 ​
  : Output at time step 
-𝑡
-t
-𝑊
+𝑡**
+
+-**𝑊
 𝑦
-W 
-y
 ​
- : Weight matrix for the output layer
-𝑏
-𝑦
-b 
-y
-​
- : Bias term for the output
+ : Weight matrix for the output layer**
+
+-**𝑏
+𝑦​
+ : Bias term for the output**
  
 ### Backpropagation Through Time (BPTT)
 
