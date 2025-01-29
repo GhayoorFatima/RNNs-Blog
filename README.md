@@ -19,7 +19,23 @@ An RNN is a type of neural network that processes sequential data by maintaining
 ## How RNNs Work
 
 RNNs take an input sequence and pass information through a hidden state over time. The hidden state is updated at each time step using the formula:
-h_t = \sigma(W_h \cdot h_{t-1} + W_x \cdot x_t + b)
+
+h 
+t
+​
+ =σ(W 
+h
+​
+ ⋅h 
+t−1
+​
+ +W 
+x
+​
+ ⋅x 
+t
+​
+ +b)
 \[ h_t = f(W_hh h_{t-1} + W_xh x_t + b_h) \]
 
 where:
